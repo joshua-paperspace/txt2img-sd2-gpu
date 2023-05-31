@@ -1,1 +1,1 @@
-# img-gen-low-res
+# txt2img-sd2-gpu
