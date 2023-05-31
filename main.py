@@ -11,7 +11,8 @@ async def root():
 
 @app.post("/generate")
 async def predict(prompt: str):
+    
     image = pipe(prompt).images[0]
-    image.save("low_res.png")
+    image.save("generated_image.jpeg")
 
-    return FileResponse('low_res.png', media_type="image/jpeg")
+    return FileResponse('generated_image.jpeg', media_type="image/jpeg")
